@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="all.min.css" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Programmer Name -->
+    <div>
+      <h1>Jihed Farhat</h1>
+      <img src="MyPic.jpeg" alt="My Picture" width="200px" />
+      <br />
+      <span>
+        <i class="fa-brands fa-github fa-2x"></i>
+        <a href="https://github.com/jihedfarhat" target="_blank">My Github</a>
+      </span>
+      <span>
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+        <a href="https://www.linkedin.com/in/jihed-farhat/" target="_blank"
+          >My Linkedin</a
+        >
+      </span>
+      <span>
+        <i class="fa-solid fa-envelope fa-2x"></i>
+        <a href="mailto:jihed.farhat.3@gmail.com" target="_blank">My Email</a>
+      </span>
+    </div>
+    <br />
+    <div>
+      <table width="600px">
+        <caption>
+          Technologies
+        </caption>
+        <thead>
+          <tr>
+            <th>Front-End</th>
+            <th>Python</th>
+            <th>JavaScript</th>
+            <th>DataBase</th>
+            <th>Concepts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5</td>
+            <td>Django</td>
+            <td>Express</td>
+            <td>MySQL</td>
+            <td>AJAX</td>
+          </tr>
+          <tr>
+            <td>CSS3</td>
+            <td>Flask</td>
+            <td>Mongoose</td>
+            <td>MongoDB</td>
+            <td>OOP</td>
+          </tr>
+          <tr>
+            <td>Bootsrap</td>
+            <td>Unittest</td>
+            <td>React</td>
+            <td></td>
+            <td>React</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Social Snakes -->
+    <div>
+      <h3>Social Snakes</h3>
+      <img src="Snek.png" alt="img of snek" />
+      <p>
+        Social Media App made in Python - <a href="#">code</a> |
+        <a href="#">deployed</a>
+      </p>
+    </div>
+
+    <!-- Contact Me -->
+    <div>
+      <h3>Contact Me</h3>
+      <form action="contact.php" method="get">
+        <div>
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="" required />
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="" required />
+        </div>
+        <br />
+        <div>
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="5"
+            placeholder="Your message here"
+            required
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="main.php" action="get"> <!-- main.php exemple for action  -->
+      <h1>Registration Form</h1>
+      <div>
+        <label for="first">First Name <span>*</span></label>
+        <input type="text" name="first" required />
+      </div>
+      <br />
+      <div>
+        <label for="last">Last Name <span>*</span></label>
+        <input type="text" name="last" required />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email Adresse <span>*</span></label>
+        <input type="email" name="email" required />
+      </div>
+      <br />
+      <div>
+        <label for="pwd">Password <span>*</span></label>
+        <input type="password" name="pwd" required />
+      </div>
+      <br />
+      <div>
+        <label for="birth">Birthday</label>
+        <input type="email" name="birth" />
+      </div>
+      <br />
+      <div>
+        <div>
+          <label for="gender">Gender Identity:</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="male" />
+          <label for="gender">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="gender">Female</label>
+          <input type="radio" name="gender" id="non" />
+          <label for="gender">Non-binary</label>
+          <input type="radio" name="gender" id="not" />
+          <label for="gender">I prefer not to answer</label>
+        </div>
+      </div>
+      <div>
+        <p>A short description about my self</p>
+        <textarea
+          cols="50"
+          rows="7"
+          placeholder="Write something here about yourself..."
+        >
+        </textarea>
+      </div>
+      <div>
+        <label for="lang">Favorite Language: </label>
+        <select name="lang" id="fvr">
+          <option value="JavaScript">JavaScript</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="React">React</option>
+          <option value="Angular">Angular</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <input type="checkbox" name="periodic" checked />
+        <label for="periodic"
+          >Yes, I would like to receive periodic email updates</label
+        >
+      </div>
+      <br />
+      <div>
+        <button type="submit">Create Account</button>
+      </div>
+      <br />
+      <div><span>*</span>Indicates a required filed</div>
+    </form>
+  </body>
+</html>
